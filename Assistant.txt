@@ -1,0 +1,42 @@
+Assitant: ChatCompletion(
+    id='chatcmpl-140', 
+    choices=[
+        Choice(
+            finish_reason='tool_calls',
+             index=0, 
+             logprobs=None, 
+             message=ChatCompletionMessage(
+                content='', refusal=None, 
+                role='assistant', 
+                annotations=None, 
+                audio=None, 
+                function_call=None, 
+                tool_calls=
+                [ChatCompletionMessageFunctionToolCall(
+                    id='call_9dwdkvss', 
+                    function=Function(
+                        arguments='{}',
+                         name='get_current_time'),
+                          type='function', 
+                          index=0), 
+                          ChatCompletionMessageFunctionToolCall(
+                            id='call_smui35u4', 
+                            function=Function
+                            (arguments='{"city":"Bangalore"}',
+                             name='get_city_weather'),
+                              type='function', index=1)],
+                               reasoning='Okay, the user is asking for the current time and the weather in Bangalore.
+                                Let me check what tools I have.\n\nFirst, there\'s get_current_time which returns the current date and time. 
+                                Then get_city_weather which takes a city name. 
+                                The city here is Bangalore, but I should make sure of the spelling. 
+                                Wait, the user wrote "Banglore" which is a common misspelling of Bangalore. 
+                                So I\'ll use "Bangalore" as the correct city name.\n\nI need to call both functions. 
+                                The first tool is get_current_time, no arguments. 
+                                The second is get_city_weather with city set to Bangalore.\n\nWait, the functions are specified as get_city_weather with 
+                                arguments {"city": "string"}. 
+                                So I should write the arguments as "Bangalore" (corrected spelling). 
+                                \n\nSo generate two tool calls: one for time and one for weather in Bangalore.\n\nWait, the user wrote "wheather" with a \'e\' instead of \'a\', but the function name is weather. 
+                                But the main thing is to get the correct city name.\n\nLet me structure the tool calls. 
+                                For get_current_time, no arguments. For get_city_weather, city is "Bangalore".\n\nSo the first tool call is get_current_time with no args. 
+                                Second tool call is get_city_weather with city "Bangalore".\n\nWait, the user said "Banglore" which is misspelled, but the API might accept Bangalore. I\'ll go with "Bangalore" as the correct spelling.\n\nSo the tool calls would be:\n\nFirst tool:
+                                 get_current_time\n\nSecond tool: get_city_weather with city: "Bangalore"\n\nI need to write each in its own tool_call XML tags.\n\nLet me check the format. Each tool call is in a tool_call XML with name and arguments as JSON.\n\nSo for the time function: name is "get_current_time", arguments is {} (empty object).\n\nFor the weather function: name is "get_city_weather", arguments is {"city": "Bangalore"}.\n\nYes.\n\nSo two tool calls here.\n'))], created=1793538781, model='qwen3:4b', object='chat.completion', metadata=None, moderation=None, service_tier=None, system_fingerprint='fp_ollama', usage=CompletionUsage(completion_tokens=458, prompt_tokens=202, total_tokens=660, completion_tokens_details=None, prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cache_write_tokens=None, cached_tokens=0, image_tokens=None, text_tokens=None)))
