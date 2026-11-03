@@ -90,6 +90,20 @@ Settings live in `.env` (see `.env.example`):
 
 ## 📸 More screenshots
 <img width="747" height="242" alt="image" src="https://github.com/user-attachments/assets/3a4521c9-8cfb-455e-902d-a73d7199b453" />
+<img width="1047" height="231" alt="image" src="https://github.com/user-attachments/assets/a8395ca0-b154-41c5-bab0-0a3190627005" />
+
+## 📁 Project structure
+
+```text
+Simple-AI-Assistance/
+├── simple_ai_assistance.py    chat loop, memory and the agent loop
+├── tools.py                   tool functions, TOOLS schema, run_tool()
+├── Utilities/
+│   └── utilities.py           grey debug log() helper
+├── .env.example               settings template
+├── requirements.txt           dependencies
+└── LICENSE                    MIT
+```
 
 
 
