@@ -44,4 +44,29 @@ flowchart LR
 | `get_city_weather(city)` | One-line weather from the free `wttr.in` service |
 | `get_user_city` | Returns the user's city (hard-coded to `Bangalore` as a demo value) |
 
+## ⚡ Quick start
 
+Prerequisites: Python 3.10+ and Ollama installed and running.
+
+# 1. Download the model
+ollama pull qwen3:4b
+
+# 2. Get the code
+git clone https://github.com/MAZHARMIK/python-ai-agent-ollama.git
+cd python-ai-agent-ollama
+
+# 3. Create and activate a virtual environment
+python -m venv .venv
+# Windows:    .venv\Scripts\activate
+# Mac/Linux:  source .venv/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Create your settings file
+cp .env.example .env        # Windows: copy .env.example .env
+
+# 6. Run
+python simple_ai_assistant.py
+
+Type exit, quit, bye or goodbye to stop.
