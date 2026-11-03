@@ -46,14 +46,15 @@ flowchart LR
 
 ## ⚡ Quick start
 
-Prerequisites: Python 3.10+ and Ollama installed and running.
+**Prerequisites:** Python 3.10+ and [Ollama](https://ollama.com) installed and running.
 
+```bash
 # 1. Download the model
 ollama pull qwen3:4b
 
 # 2. Get the code
-git clone https://github.com/MAZHARMIK/python-ai-agent-ollama.git
-cd python-ai-agent-ollama
+git clone https://github.com/jagdishrathod1302/Simple-AI-Assistance.git
+cd Simple-AI-Assistance
 
 # 3. Create and activate a virtual environment
 python -m venv .venv
@@ -68,5 +69,6 @@ cp .env.example .env        # Windows: copy .env.example .env
 
 # 6. Run
 python simple_ai_assistant.py
+```
 
-Type exit, quit, bye or goodbye to stop.
+Type `exit`, `quit`, `bye` or `goodbye` to stop.
