@@ -75,3 +75,21 @@ Type `exit`, `quit`, `bye` or `goodbye` to stop.
 
 <img width="735" height="202" alt="image" src="https://github.com/user-attachments/assets/0772d775-e019-410e-a51c-983726399d69" />
 
+## ⚙️ Configuration
+
+Settings live in `.env` (see `.env.example`):
+
+| Name | Meaning |
+|---|---|
+| `BASE_URL` | OpenAI-compatible endpoint. For Ollama: `http://127.0.0.1:11434/v1` |
+| `API_KEY` | Required by the client, ignored by Ollama. Any dummy value works |
+| `MODEL` | Exact model name from `ollama list`. It must support tool calling |
+| `DEBUG` | Set to `True` (capital T) to show the grey debug trace |
+
+> 💡 Rules for `.env`: `NAME=value`, no spaces around `=`, no quotes. Restart the program after editing it.
+
+## 📸 More screenshots
+<img width="747" height="242" alt="image" src="https://github.com/user-attachments/assets/3a4521c9-8cfb-455e-902d-a73d7199b453" />
+
+
+
