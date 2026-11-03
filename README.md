@@ -72,3 +72,6 @@ python simple_ai_assistant.py
 ```
 
 Type `exit`, `quit`, `bye` or `goodbye` to stop.
+
+<img width="735" height="202" alt="image" src="https://github.com/user-attachments/assets/0772d775-e019-410e-a51c-983726399d69" />
+
